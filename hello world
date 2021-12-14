@@ -1,1 +1,13 @@
-print ("hello world")
+print ("calculating a z-score\n")
+
+formula = "(x̄-μ)\n_____\n  σ\n ___\n √n"
+
+try:
+  xbar = float(input ("Sample mean?\n"))
+  mu = float(input("Population mean?\n"))
+  stdP = float(input ("Population standard deviation?\n"))
+  n = float(input ("Sample count?\n"))
+except NonFloat:
+  print ("invalid input")
+n_sqr = n ** (0.5)
+
